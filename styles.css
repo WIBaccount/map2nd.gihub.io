@@ -1,0 +1,32 @@
+body {
+    font-family: 'Meiryo UI', sans-serif;
+    background: linear-gradient(to bottom, #e0d4d4, #57317a80);
+    background-attachment: fixed;
+}
+p {
+    margin: 2px 0;  /* 上下のマージンを10pxに設定 */
+}
+
+.ui-slider {
+    background: gray;  /* 非選択範囲の色を灰色に設定 */
+
+    width: 60%;
+    height: 14px;
+    margin: 20px auto;
+}
+
+.ui-slider .ui-slider-range {
+    background: aqua;  /* 選択範囲の色を水色に設定 */
+    }
+
+.ui-slider .ui-slider-handle {
+    width: 30px;  /* ハンドルの幅 */
+    height: 30px;  /* ハンドルの高さ */
+    border-radius: 20px;
+    margin-top: -6px;
+    background-color: rgb(56, 12, 250);
+    border: 3px solid black;
+}
+
+
+

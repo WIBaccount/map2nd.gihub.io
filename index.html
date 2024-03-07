@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel='stylesheet' href='https://unpkg.com/maplibre-gl@1.15.2/dist/maplibre-gl.css' />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <style>
+        body {
+            background: linear-gradient(to bottom, #e0d4d4, #57317a80);
+            background-attachment: fixed;
+        }
+
+        #top-heading {
+            font-size: 22px;
+            font-weight: bold;
+            font-style: italic;
+            color: #444444;
+        }
+
+        #map {
+            width: 95%;
+            height: 700px;
+            margin: 0 auto;
+            background: linear-gradient(to bottom, #a3cda3, #f2f2f2);
+        }
+
+        #selected-period, #date {
+            text-align: center;
+        }
+
+    </style>
+
+    <script src='https://unpkg.com/maplibre-gl@1.15.2/dist/maplibre-gl.js'></script>
+</head>
+
+<body>
+    <h1 id="top-heading">発電所 停止情報 マップ（非商用）</h1>
+
+    <div id='map'></div>
+    <div id="slider"></div>
+    <div id="selected-period">左右のつまみを操作して表示期間を選択してください</div>
+    <div id="date"></div>
+
+    <p>製作: <a href="https://github.com">wataru.ishida(Github)</a></p>
+    <p>発電所 停止情報および座標: <a href="https://hjks.jepx.or.jp/hjks/">発電情報システムHJKS</a> / <a href="https://developers.google.com/maps?hl=ja">Google Maps Platform</a></p>
+    <p>地図関連: <a href="https://maps.gsi.go.jp/vector/#7/36.104611/140.084556/&ls=vstd&disp=1&d=l">地理院地図Vector</a> / <a href="https://maplibre.org">MapLibre</a></p>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

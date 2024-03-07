@@ -6,7 +6,7 @@ var sliderInstance = initializeSlider();
 var markers = [];
 
 // "sample.csv" ファイルを取得する
-fetch('testfile.csv')
+fetch('test002.csv')
     .then(response => response.text())
     .then(data => {
         // CSVデータをパースする
